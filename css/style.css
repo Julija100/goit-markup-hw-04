@@ -43,6 +43,7 @@ button:focus {
 
 .address {
   font-style: normal;
+  padding-left: 215px;
 }
 
 .container {
@@ -63,6 +64,7 @@ button:focus {
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  padding-left: 215px;
 }
 .logotype-part {
   font-family: Raleway;
@@ -75,6 +77,16 @@ button:focus {
 /*=====LOGOTYPE END=====*/
 
 /*=====HEADER=====*/
+.icon-envelope {
+  width: 12px;
+  height: 16px;
+  color: #757575;
+}
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  color: #757575;
+}
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -143,7 +155,7 @@ button:focus {
   display: flex;
   height: 600px;
   flex-grow: 1;
-  background: #2f303a;
+  background-color: #2f303a;
 }
 .hero .container {
   display: flex;
@@ -215,7 +227,7 @@ button:focus {
   border-radius: 4px;
   padding: 25px 100px 25px 100px;
 }
-.about-us-img {
+.about-us-icons {
   width: 70px;
   height: 70px;
 }
@@ -240,7 +252,6 @@ button:focus {
 /*=====ABOUT-US END=====*/
 
 /*=====WHAT WE DO=====*/
-
 .what-we-do-list {
   display: flex;
   justify-content: space-between;
@@ -318,7 +329,6 @@ button:focus {
 .our-portfolio-list-link-description {
   padding: 20px 24px;
 }
-
 /*=====PORTFOLIO END=====*/
 
 /*=====COMPONENTS=====*/
@@ -348,7 +358,6 @@ button:focus {
 /*=====COMPONENTS END=====*/
 
 /*=====BUTTONS=====*/
-
 .our-portfolio-navigation-button {
   font-weight: 500;
   font-size: 16px;
@@ -357,7 +366,6 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-
 /*=====BUTTONS END=====*/
 
 /*=====FOOTER=====*/
@@ -371,6 +379,7 @@ button:focus {
 .footer {
   background: #2f303a;
   padding: 60px 0;
+  display: flex;
 }
 .footer-navigation-list > li > a {
   font-weight: normal;
@@ -385,4 +394,20 @@ button:focus {
 .footer-navigation-list-item {
   margin-top: 9px;
 }
+
+.social-list {
+  display: flex;
+  width: 206px;
+  height: 44px;
+}
+.join {
+  padding-left: 0;
+}
+
+.icon {
+  width: 44px;
+  height: 44px;
+  fill: red;
+}
+
 /*=====FOOTER END=====*/
