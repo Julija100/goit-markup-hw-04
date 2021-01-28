@@ -43,8 +43,6 @@ button:focus {
 
 .address {
   font-style: normal;
-  padding-left: 215px;
-  
 }
 
 .container {
@@ -65,7 +63,6 @@ button:focus {
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  padding-left: 215px;
 }
 .logotype-part {
   font-family: Raleway;
@@ -109,6 +106,10 @@ button:focus {
 .navigation-list:not(:last-child) {
   margin-right: 50px;
 }
+.header-contacts {
+  display: flex;
+  justify-content: center;
+}
 .header-contacts-list {
   display: flex;
   align-items: center;
@@ -130,8 +131,8 @@ button:focus {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-.navigation-list-link :hover,
-.navigation-list-link :focus {
+.navigation-list-link:hover,
+.navigation-list-link:focus {
   color: var(--accent-color);
 }
 .navigation-list-link.current {
@@ -139,16 +140,32 @@ button:focus {
 }
 
 .header-contacts-link {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.header-contacts-link :hover,
-.header-contacts-link :focus {
+.header-contacts-link:hover .icon-envelope,
+.header-contacts-link:focus .icon-envelope {
+  fill: var(--accent-color);
+}
+.header-contacts-link:hover .icon-smartphone,
+.header-contacts-link:focus .icon-smartphone {
+  fill: var(--accent-color);
+}
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: var(--accent-color);
 }
+.icon-envelope {
+  margin-right: 10px;
+}
+.icon-smartphone {
+  margin-right: 10px;
+}
+
 /*=====HEADER END=====*/
 
 /*=====HERO=====*/
@@ -269,10 +286,20 @@ button:focus {
   justify-content: space-between;
   gap: 10px;
   margin: 16px 32px auto 32px;
-  background-color: red;
 }
 
 .our-team-social-links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-team-icons {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.our-team-social-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,14 +309,13 @@ button:focus {
   border-radius: 50%;
 }
 
-.our-team-icons {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-}
 .our-team-social-links:hover .our-team-icons,
 .our-team-social-links:focus .our-team-icons {
-  fill: #2196f3;
+  fill: #ffffff;
+}
+.our-team-social-links:hover,
+.our-team-social-links:focus {
+  background-color: var(--accent-color);
 }
 
 .our-team {
@@ -342,6 +368,9 @@ button:focus {
   justify-content: space-between;
   margin-top: 50px;
 }
+.customers-links {
+  display: block;
+}
 .customers-list-item {
   display: flex;
   justify-content: center;
@@ -354,9 +383,17 @@ button:focus {
   border-radius: 4px;
 }
 .customers-icons {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   fill: #afb1b8;
+}
+.customers-links:hover .customers-icons,
+.customers-links:focus .customers-icons {
+  fill: var(--accent-color);
+}
+.customers-list-item:hover,
+.customers-list-item:focus {
+  border-color: var(--accent-color);
 }
 /*=====CUSTOMERS END====*/
 
@@ -449,19 +486,19 @@ button:focus {
 .footer-navigation-list-item {
   margin-top: 9px;
 }
-.join{
+.join {
   margin-left: 70px;
 }
-.join-title{
-width: 145px;
-height: 16px;
-font-weight: bold;
-font-size: 14px;
-line-height: 1.143;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #ffffff;
-margin-bottom: 20px;
+.join-title {
+  width: 145px;
+  height: 16px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 .footer-social-list {
   display: flex;
@@ -469,46 +506,20 @@ margin-bottom: 20px;
   width: 206px;
   height: 44px;
 }
-.footer-social-list-item{
+.footer-social-list-item {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   box-sizing: border-box;
-  background-color:#757575 ;
+  background-color: #757575;
   border-radius: 50%;
 }
 .icon {
   width: 20px;
   height: 20px;
-  fill:#ffffff;
+  fill: #ffffff;
 }
 
 /*=====FOOTER END=====*/
-
-/* .customers {
-  padding: 94px 0;
-}
-.customers-list {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-.customers-list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 4px;
-}
-.customers-icons {
-  width: 45px;
-  height: 45px;
-  fill: #afb1b8; */
-}
-
