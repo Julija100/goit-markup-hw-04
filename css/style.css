@@ -332,6 +332,33 @@ button:focus {
 }
 /*=====OUR TEAM END ====*/
 
+/*=====CUSTOMERS====*/
+.customers {
+  padding: 94px 0;
+}
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.customers-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+.customers-icons {
+  width: 45px;
+  height: 45px;
+  fill: #afb1b8;
+}
+/*=====CUSTOMERS END====*/
+
 /*=====PORTFOLIO=====*/
 .our-portfolio {
   padding: 83px 0 105px 0;
