@@ -44,6 +44,7 @@ button:focus {
 .address {
   font-style: normal;
   padding-left: 215px;
+  
 }
 
 .container {
@@ -429,7 +430,6 @@ button:focus {
 }
 .footer .container {
   display: flex;
-  flex-direction: column;
 }
 .footer {
   background: #2f303a;
@@ -449,20 +449,66 @@ button:focus {
 .footer-navigation-list-item {
   margin-top: 9px;
 }
-
-.social-list {
+.join{
+  margin-left: 70px;
+}
+.join-title{
+width: 145px;
+height: 16px;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.143;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #ffffff;
+margin-bottom: 20px;
+}
+.footer-social-list {
   display: flex;
+  justify-content: space-between;
   width: 206px;
   height: 44px;
 }
-.join {
-  padding-left: 0;
-}
-
-.icon {
+.footer-social-list-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  fill: red;
+  box-sizing: border-box;
+  background-color:#757575 ;
+  border-radius: 50%;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  fill:#ffffff;
 }
 
 /*=====FOOTER END=====*/
+
+/* .customers {
+  padding: 94px 0;
+}
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.customers-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+.customers-icons {
+  width: 45px;
+  height: 45px;
+  fill: #afb1b8; */
+}
+
