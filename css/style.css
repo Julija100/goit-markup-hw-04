@@ -169,7 +169,11 @@ button:focus {
 .hero {
   display: flex;
   height: 600px;
-  background-image: url(file:///C:/Users/Julia/Documents/GitHub/goit-markup-hw-04/images/hero/Img.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.38),
+      rgba(47, 48, 58, 0.38)
+    ),
+    url('../images/hero/Img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -409,18 +413,16 @@ button:focus {
   flex-wrap: wrap;
   gap: 30px;
 }
-.our-portfolio-list > li {
-  width: 370px;
-  height: 404px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-}
 .our-portfolio-list-link-description {
   padding: 20px 24px;
 }
 .our-portfolio-list-link {
   display: block;
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 .our-portfolio-list-link:hover,
 .our-portfolio-list-link:focus {
