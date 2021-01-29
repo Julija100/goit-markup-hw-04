@@ -90,7 +90,6 @@ button:focus {
   padding-bottom: 25px;
   border: 1px solid #ececec;
 }
-
 .header .container {
   display: flex;
   align-items: center;
@@ -138,7 +137,6 @@ button:focus {
 .navigation-list-link.current {
   color: var(--accent-color);
 }
-
 .header-contacts-link {
   display: flex;
   font-weight: 500;
@@ -165,15 +163,15 @@ button:focus {
 .icon-smartphone {
   margin-right: 10px;
 }
-
 /*=====HEADER END=====*/
 
 /*=====HERO=====*/
 .hero {
   display: flex;
   height: 600px;
-  flex-grow: 1;
-  background-color: #2f303a;
+  background-image: url(file:///C:/Users/Julia/Documents/GitHub/goit-markup-hw-04/images/hero/Img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero .container {
   display: flex;
@@ -193,7 +191,6 @@ button:focus {
   margin: 0 auto;
   color: #ffffff;
 }
-
 .button-primary {
   color: var(--primary-btn-text-color);
   background-color: var(--accent-color);
@@ -228,7 +225,6 @@ button:focus {
 .about-us {
   padding: 94px 0;
 }
-
 .about-us-theme {
   display: flex;
   justify-content: space-between;
@@ -249,7 +245,6 @@ button:focus {
   width: 70px;
   height: 70px;
 }
-
 .about-us-h3 {
   font-weight: bold;
   font-size: 14px;
@@ -287,13 +282,11 @@ button:focus {
   gap: 10px;
   margin: 16px 32px auto 32px;
 }
-
 .our-team-social-links-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .our-team-icons {
   width: 20px;
   height: 20px;
@@ -308,7 +301,6 @@ button:focus {
   height: 44px;
   border-radius: 50%;
 }
-
 .our-team-social-links:hover .our-team-icons,
 .our-team-social-links:focus .our-team-icons {
   fill: #ffffff;
@@ -317,7 +309,6 @@ button:focus {
 .our-team-social-links:focus {
   background-color: var(--accent-color);
 }
-
 .our-team {
   padding: 94px 0;
 }
@@ -336,7 +327,6 @@ button:focus {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .our-team-list-card > img {
   width: 100%;
   height: 260px;
@@ -369,18 +359,25 @@ button:focus {
   margin-top: 50px;
 }
 .customers-links {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 170px;
+  height: 90px;
 }
 .customers-list-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   background-color: #ffffff;
   border-radius: 4px;
+}
+.customers-list-item > img {
+  width: 100%;
+  height: 90px;
 }
 .customers-icons {
   width: 55px;
@@ -422,6 +419,16 @@ button:focus {
 .our-portfolio-list-link-description {
   padding: 20px 24px;
 }
+.our-portfolio-list-link {
+  display: block;
+}
+.our-portfolio-list-link:hover,
+.our-portfolio-list-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
 /*=====PORTFOLIO END=====*/
 
 /*=====COMPONENTS=====*/
@@ -433,7 +440,6 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-
 .our-portfolio-works {
   font-weight: bold;
   font-size: 18px;
@@ -458,6 +464,16 @@ button:focus {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.button-secondary {
+  display: block;
+}
+.button-secondary:hover,
+.button-secondary:focus {
+  background: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*=====BUTTONS END=====*/
 
@@ -506,20 +522,28 @@ button:focus {
   width: 206px;
   height: 44px;
 }
-.footer-social-list-item {
+.footer-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
-  box-sizing: border-box;
-  background-color: #757575;
   border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-social-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 .icon {
   width: 20px;
   height: 20px;
   fill: #ffffff;
 }
-
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
 /*=====FOOTER END=====*/
