@@ -76,8 +76,8 @@ button:focus {
 
 /*=====HEADER=====*/
 .icon-envelope {
-  width: 12px;
-  height: 16px;
+  width: 16px;
+  height: 12px;
   color: #757575;
 }
 .icon-smartphone {
@@ -212,14 +212,7 @@ button:focus {
   margin: 30px auto 0 auto;
   justify-content: center;
 }
-.button-secondary {
-  color: var(--title-text-color);
-  background-color: #f5f4fa;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 4px;
-  padding: 10px 32px;
-  border: none;
-}
+
 .button-secondary :focus,
 .button-secondary :hover {
   background: #188ce8;
@@ -281,6 +274,9 @@ button:focus {
 /*=====WHAT WE DO END=====*/
 
 /*=====OUR TEAM =======*/
+.our-team {
+  background: #f5f4fa;
+}
 .our-team-social-list {
   display: flex;
   justify-content: space-between;
@@ -385,11 +381,33 @@ button:focus {
   height: 90px;
 }
 .customers-icons {
-  width: 55px;
-  height: 55px;
   fill: #afb1b8;
 }
-.customers-links:hover .customers-icons,
+.customers-list .customers-list-item:nth-child(1) .customers-icons {
+  width: 45px;
+  height: 50px;
+}
+.customers-list .customers-list-item:nth-child(2) .customers-icons {
+  width: 40px;
+  height: 52px;
+}
+.customers-list .customers-list-item:nth-child(3) .customers-icons {
+  width: 41px;
+  height: 43px;
+}
+.customers-list .customers-list-item:nth-child(4) .customers-icons {
+  width: 80px;
+  height: 42px;
+}
+.customers-list .customers-list-item:nth-child(5) .customers-icons {
+  width: 59px;
+  height: 47px;
+}
+.customers-list .customers-list-item:nth-child(6) .customers-icons {
+  width: 88px;
+  height: 45px;
+}
+.customers-list-item .customers-links:hover .customers-icons,
 .customers-links:focus .customers-icons {
   fill: var(--accent-color);
 }
@@ -400,6 +418,13 @@ button:focus {
 /*=====CUSTOMERS END====*/
 
 /*=====PORTFOLIO=====*/
+.button-secondary {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: none;
+}
 .our-portfolio {
   padding: 83px 0 105px 0;
 }
